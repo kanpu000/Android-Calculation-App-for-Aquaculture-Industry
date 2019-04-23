@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.poseidon.calculation.ui.NeedSomeActivity"
+    tools:showIn="@layout/activity_need_some">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marigin_main_menu"
+                android:gravity="center"
+                android:text="@string/needsome_title"
+                android:textSize="@dimen/textsize_main_menu"/>
+            
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/llTop">
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/textsize_needsome_item"
+                       android:layout_marginLeft="@dimen/marigin_needsome_item"
+                       android:paddingLeft="@dimen/marigin_needsome_itempadding"
+                       android:text="Site Name"/>
+
+                   <EditText
+                       android:id="@+id/edtSiteName"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/textsize_needsome_item"
+                       android:layout_marginLeft="@dimen/marigin_needsome_item"
+                       android:layout_marginBottom="@dimen/marigin_needsome_item"
+                       android:inputType="text"
+                       android:maxLines="1"
+                       android:padding="@dimen/marigin_needsome_itempadding"/>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_alignParentLeft="true"
+                           android:id="@+id/tvPanelGeneration"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Panel Generation"/>
+
+                       <Spinner
+                           android:layout_toRightOf="@id/tvPanelGeneration"
+                           android:id="@+id/spnPanelGen"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="right"
+                           android:layout_marginTop="10dp"/>
+
+                   </RelativeLayout>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvAvailableCompressors"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Available Compressors" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtAvailableCompressors"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:maxLines="1"
+                           android:inputType="number"/>
+
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvCompressorOutput"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Compressor Output CFM(FAD)" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtCompressorOutput"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:maxLines="1"
+                           android:inputType="number" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvActiveCompressors"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Active Compressors" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtActiveCompressors"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:inputType="number"
+                           android:maxLines="1"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvNumberOfPen"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Number of Pens" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtNumberOfPen"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:maxLines="1"
+                           android:inputType="number"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvChannelsPerPen"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Channels Per Pen" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtChannelsPerPen"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:maxLines="1"
+                           android:inputType="number"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvActivePens"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Active Pens" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtActivePens"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:inputType="number"
+                           android:maxLines="1"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvNumberOfWalkway"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Number of Walkway Channels" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtNumberOfWalkway"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:maxLines="1"
+                           android:inputType="number"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvActiveWalkwayChannels"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Active Walkway Channels" />
+
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtActiveWalkwayChannels"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:inputType="number"
+                           android:maxLines="1"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_weight="3"
+                           android:id="@+id/tvPannelSetPressure"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:text="Panel Set Pressure(PSI)" />
+
+                       <EditText
+                           android:layout_weight="1"
+                           android:id="@+id/edtPannelSetPressure"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/textsize_needsome_item"
+                           android:layout_margin="@dimen/marigin_needsome_item"
+                           android:padding="@dimen/marigin_needsome_itempadding"
+                           android:maxLines="1"
+                           android:inputType="number"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/llBottom"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center" >
+
+                       <Button
+                           android:id="@+id/btnCalc"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="@dimen/marigin_needsome_nextbottom"
+                           android:layout_marginLeft="@dimen/marigin_needsome_next"
+                           android:layout_marginRight="@dimen/marigin_needsome_next"
+                           android:layout_marginTop="@dimen/marigin_needsome_nextbottom"
+                           android:layout_gravity="center"
+                           android:text="@string/calc"
+                           android:textSize="@dimen/textsize_needsome_button"/>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+
+           </ScrollView>
+
+
+       </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

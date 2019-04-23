@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:paddingRight="@dimen/marigin_needsome_spinnerleft"
+        android:paddingLeft="@dimen/marigin_needsome_spinnerleft"
+        android:paddingTop="@dimen/marigin_needsome_spinnertop"
+        android:paddingBottom="@dimen/marigin_needsome_spinnertop"
+        android:text=""
+        android:textSize="@dimen/textsize_needsome_item" />
+
+</LinearLayout>

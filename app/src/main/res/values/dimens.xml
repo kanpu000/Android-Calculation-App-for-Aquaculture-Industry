@@ -1,0 +1,41 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="marigin_main_menu">15dp</dimen>
+    <dimen name="textsize_main_menu">18sp</dimen>
+
+    <dimen name="marigin_needsome_title">20dp</dimen>
+    <dimen name="marigin_needsome_next">50dp</dimen>
+    <dimen name="marigin_needsome_nextbottom">15dp</dimen>
+    <dimen name="marigin_needsome_item">10dp</dimen>
+    <dimen name="marigin_needsome_itempadding">15dp</dimen>
+    <dimen name="marigin_needsome_spinnerleft">30dp</dimen>
+    <dimen name="marigin_needsome_spinnertop">10dp</dimen>
+
+    <dimen name="textsize_needsome_item">16sp</dimen>
+    <dimen name="textsize_needsome_title">20sp</dimen>
+    <dimen name="textsize_needsome_button">16sp</dimen>
+    <dimen name="textsize_site_item">18sp</dimen>
+    <dimen name="textsize_retrieve_title">20sp</dimen>
+
+    <dimen name="textsize_calc_item">18sp</dimen>
+
+    <dimen name="padding_item_site">10dp</dimen>
+
+    <dimen name="edittext_length">7</dimen>
+
+    <dimen name="weight_needsome_label">3</dimen>
+    <dimen name="weight_needsome_value">1</dimen>
+
+
+    <!-- calc -->
+    <dimen name="marigin_calc_top">50dp</dimen>
+    <dimen name="marigin_calc_left">10dp</dimen>
+    <dimen name="marigin_calc_button">20dp</dimen>
+
+    <!-- info-->
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+
+
+</resources>
