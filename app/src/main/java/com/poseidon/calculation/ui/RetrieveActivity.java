@@ -67,8 +67,4 @@ public class RetrieveActivity extends AppCompatActivity implements OnRetrieveLis
         startActivity(intent);
         finish();
     }
-
-    private void setFunc(int a) {
-        return;
-    }
 }

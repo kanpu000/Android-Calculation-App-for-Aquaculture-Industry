@@ -39,14 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mLlNewItem.setOnClickListener(this);
         mLlRestoreItem.setOnClickListener(this);
 
-        Calendar c = Calendar.getInstance();
-        Date today = c.getTime();
-        int month = today.getMonth();
-        int day = today.getDate();
-        if (today.getMonth() != 1 || today.getDate() > 29 ) {
-            finish();
-        }
-
 
     }
 
